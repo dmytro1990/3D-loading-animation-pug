@@ -1,0 +1,13 @@
+- const lineOne = 'Loading';
+- const lineTwo = 'Content';
+.loading-conteiner 
+ .scene
+  .word
+   - for (const [index, letter ] of lineOne.split('').entries())
+    .letter__wrap(style=`--index: ${index}`)
+     .letter(data-letter=letter)
+      span.letter__panel= letter
+      span.letter__panel= lineTwo[index]
+      span.letter__panel= letter
+      span.letter__panel= lineTwo[index]
+      span.letter__panel
